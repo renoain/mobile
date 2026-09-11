@@ -1,0 +1,30 @@
+# Konfigurasi analyzer untuk project KKOS.
+# Analyzer memeriksa error, warning, dan lint pada kode Dart.
+
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**
+    - '**/*.g.dart'
+    - '**/*.freezed.dart'
+
+linter:
+  rules:
+    - prefer_const_constructors
+    - prefer_final_fields
+    - prefer_single_quotes
+    - require_trailing_commas
+    - avoid_print
+    - use_key_in_widget_constructors
+    - directives_ordering
+    - camel_case_types
+    - file_names
+    - always_declare_return_types
+    - annotate_overrides
